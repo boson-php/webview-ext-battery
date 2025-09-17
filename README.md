@@ -5,14 +5,14 @@
 ---
 
 <p align="center">
-    <a href="https://packagist.org/packages/boson-php/webview-extension-battery"><img src="https://poser.pugx.org/boson-php/webview-extension-battery/require/php?style=for-the-badge" alt="PHP 8.4+"></a>
-    <a href="https://packagist.org/packages/boson-php/webview-extension-battery"><img src="https://poser.pugx.org/boson-php/webview-extension-battery/version?style=for-the-badge" alt="Latest Stable Version"></a>
-    <a href="https://packagist.org/packages/boson-php/webview-extension-battery"><img src="https://poser.pugx.org/boson-php/webview-extension-battery/v/unstable?style=for-the-badge" alt="Latest Unstable Version"></a>
-    <a href="https://raw.githubusercontent.com/boson-php/boson/blob/master/LICENSE"><img src="https://poser.pugx.org/boson-php/webview-extension-battery/license?style=for-the-badge" alt="License MIT"></a>
+    <a href="https://packagist.org/packages/boson-php/webview-ext-battery"><img src="https://poser.pugx.org/boson-php/webview-ext-battery/require/php?style=for-the-badge" alt="PHP 8.4+"></a>
+    <a href="https://packagist.org/packages/boson-php/webview-ext-battery"><img src="https://poser.pugx.org/boson-php/webview-ext-battery/version?style=for-the-badge" alt="Latest Stable Version"></a>
+    <a href="https://packagist.org/packages/boson-php/webview-ext-battery"><img src="https://poser.pugx.org/boson-php/webview-ext-battery/v/unstable?style=for-the-badge" alt="Latest Unstable Version"></a>
+    <a href="https://raw.githubusercontent.com/boson-php/boson/blob/master/LICENSE"><img src="https://poser.pugx.org/boson-php/webview-ext-battery/license?style=for-the-badge" alt="License MIT"></a>
     <a href="https://t.me/boson_php"><img src="https://img.shields.io/static/v1?label=&message=Join+To+Community&color=24A1DE&style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" /></a>
 </p>
 <p align="center">
-    <a href="https://github.com/boson-php/webview-extension-battery/actions/workflows/tests.yml"><img src="https://img.shields.io/github/actions/workflow/status/boson-php/boson/tests.yml?label=Tests&style=flat-square&logo=unpkg"></a>
+    <a href="https://github.com/boson-php/webview-ext-battery/actions/workflows/tests.yml"><img src="https://img.shields.io/github/actions/workflow/status/boson-php/boson/tests.yml?label=Tests&style=flat-square&logo=unpkg"></a>
 </p>
 
 ## Installation
@@ -21,7 +21,7 @@ Boson package is available as Composer repository and can
 be installed using the following command in a root of your project:
 
 ```bash
-composer require boson-php/webview-extension-battery
+composer require boson-php/webview-ext-battery
 ```
 
 ## Documentation
