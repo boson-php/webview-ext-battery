@@ -9,7 +9,7 @@ use Boson\WebView\Api\Battery\Exception\BatteryNotAvailableException;
 use Boson\WebView\Api\Battery\Exception\BatteryNotReadyException;
 
 #[ExpectsSecurityContext]
-interface BatteryExtensionInterface
+interface BatteryApiInterface
 {
     /**
      * Contains {@see true} if the Battery API is available,

@@ -13,12 +13,12 @@ use Boson\WebView\Api\Battery\Event\BatteryLevelChanged;
 use Boson\WebView\Api\Battery\Exception\BatteryNotAvailableException;
 use Boson\WebView\Api\Battery\Exception\BatteryNotReadyException;
 use Boson\WebView\Api\Battery\Exception\InsecureBatteryContextException;
-use Boson\WebView\Api\Bindings\BindingsExtensionInterface;
-use Boson\WebView\Api\Data\DataExtensionInterface;
+use Boson\WebView\Api\Bindings\BindingsApiInterface;
+use Boson\WebView\Api\Data\DataRetrieverInterface;
 use Boson\WebView\Api\Data\Exception\WebViewIsNotReadyException;
-use Boson\WebView\Api\Scripts\ScriptsExtensionInterface;
-use Boson\WebView\Api\Security\SecurityExtensionInterface;
-use Boson\WebView\Api\WebViewExtension;
+use Boson\WebView\Api\LoadedWebViewExtension;
+use Boson\WebView\Api\Scripts\ScriptsApiInterface;
+use Boson\WebView\Api\Security\SecurityInfoInterface;
 use Boson\WebView\WebView;
 
 /**
@@ -30,8 +30,8 @@ use Boson\WebView\WebView;
  * }
  */
 #[ExpectsSecurityContext]
-final class ClientBatteryExtension extends WebViewExtension implements
-    BatteryExtensionInterface
+final class BatteryApi extends LoadedWebViewExtension implements
+    BatteryApiInterface
 {
     public bool $isAvailable {
         get => (bool) $this->data->get('navigator.getBattery instanceof Function');
@@ -73,10 +73,10 @@ final class ClientBatteryExtension extends WebViewExtension implements
     public function __construct(
         WebView $context,
         EventListener $listener,
-        private readonly BindingsExtensionInterface $bindings,
-        private readonly DataExtensionInterface $data,
-        private readonly ScriptsExtensionInterface $scripts,
-        private readonly SecurityExtensionInterface $security,
+        private readonly BindingsApiInterface $bindings,
+        private readonly DataRetrieverInterface $data,
+        private readonly ScriptsApiInterface $scripts,
+        private readonly SecurityInfoInterface $security,
     ) {
         parent::__construct($context, $listener);
 
